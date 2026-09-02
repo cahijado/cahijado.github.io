@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · 80s Retro Car Launcher</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.25rem; }
+  .fecha { opacity: .7; font-size: .9rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .4rem 0; }
+  code { font-size: .9em; }
+  .aviso { border-left: 3px solid currentColor; padding-left: 1rem; opacity: .85; }
+</style>
+</head>
+<body>
+
+<h1>Política de privacidad de 80s Retro Car Launcher</h1>
+<p class="fecha">Última actualización: 31 de agosto de 2026</p>
+
+<p>
+  80s Retro Car Launcher es una pantalla de inicio para Android. No tiene servidores
+  propios, no tiene cuentas de usuario, no incluye publicidad ni herramientas
+  de analítica, y <strong>el desarrollador no recibe ningún dato de quien usa
+  la aplicación</strong>.
+</p>
+
+<p>
+  Todo lo que la aplicación guarda se queda en el almacenamiento privado del
+  propio teléfono. Lo único que sale del dispositivo es lo que se describe en
+  el apartado «Conversación por voz», y sale hacia Google, no hacia nosotros.
+</p>
+
+<h2>Qué datos usa la aplicación y para qué</h2>
+
+<h3>Ubicación</h3>
+<p>
+  El velocímetro del panel necesita la ubicación precisa para calcular la
+  velocidad. La posición se usa en memoria mientras la pantalla está abierta:
+  <strong>no se guarda, no se registra y no se envía a ningún sitio</strong>.
+  Si se deniega el permiso, la aplicación funciona igual y el velocímetro
+  marca cero.
+</p>
+
+<h3>Micrófono y conversación por voz</h3>
+<p>
+  El micrófono se activa <strong>únicamente</strong> mientras se mantiene
+  abierta la conversación, después de pulsar el botón del micrófono. No hay
+  escucha en segundo plano ni palabra de activación.
+</p>
+<ul>
+  <li>
+    El audio lo transcribe el <strong>reconocedor de voz del propio sistema
+    Android</strong>. Según el teléfono y el idioma instalado, esa
+    transcripción ocurre dentro del dispositivo o en los servidores de Google,
+    bajo los términos del propio sistema operativo. La aplicación no graba ni
+    almacena el audio.
+  </li>
+  <li>
+    El <strong>texto</strong> de la pregunta transcrita, los últimos turnos de
+    la conversación (que viven solo en memoria y se pierden al cerrar la
+    aplicación) y el <strong>nombre de conductor</strong> configurado se envían
+    a la <strong>API de Google Gemini</strong> para obtener la respuesta.
+  </li>
+  <li>
+    Ese envío se hace con la <strong>clave de API que cada usuario crea y
+    configura</strong> en la propia aplicación. La relación es entre el usuario
+    y Google: se aplican la
+    <a href="https://policies.google.com/privacy">política de privacidad de
+    Google</a> y los términos de la API de Gemini. El desarrollador de la aplicación
+    no interviene, no puede ver esas conversaciones y no recibe copia
+    de nada.
+  </li>
+  <li>
+    La respuesta se lee en voz alta con el sintetizador de voz del sistema y no
+    se guarda.
+  </li>
+</ul>
+<p class="aviso">
+  Sin clave de Gemini configurada, la conversación está desactivada: el botón
+  del micrófono aparece bloqueado y no se abre el micrófono en ningún momento.
+</p>
+
+<h3>Clave de API de Gemini</h3>
+<p>
+  La clave se guarda en el almacenamiento privado de la aplicación, dentro del
+  teléfono. Está <strong>excluida de la copia de seguridad en la nube y del
+  traspaso de datos a un teléfono nuevo</strong>, de modo que no sale del
+  dispositivo donde se escribió. Se envía solo a Google, en cada petición, como
+  credencial de la propia API. Se puede borrar en cualquier momento vaciando el
+  campo en la pantalla de configuración.
+</p>
+
+<h3>Acceso a notificaciones</h3>
+<p>
+  El acceso a notificaciones es opcional y lo concede el usuario a mano en los
+  ajustes de Android. La aplicación lo usa para dos cosas, ambas
+  <strong>dentro del teléfono</strong>:
+</p>
+<ul>
+  <li>controlar la reproducción de música (saber qué suena, pausar, cambiar de
+      pista), que es la única vía que Android da a una aplicación normal para
+      hacerlo;</li>
+  <li>mostrar en el panel la indicación de giro de la aplicación de navegación
+      que esté guiando en ese momento.</li>
+</ul>
+<p>
+  El contenido de las notificaciones no se almacena, no se registra en ningún
+  fichero y no se envía a ningún servidor. Sin este permiso la aplicación
+  funciona igual, con esos dos paneles vacíos.
+</p>
+
+<h3>Lista de aplicaciones instaladas</h3>
+<p>
+  Como cualquier pantalla de inicio, la aplicación consulta qué aplicaciones
+  tienen icono de lanzador para poder mostrarlas y abrirlas. Esa consulta se
+  responde en el dispositivo y no se transmite.
+</p>
+
+<h3>Ajustes</h3>
+<p>
+  El nombre de conductor, el modo pursuit y los indicadores elegidos se guardan
+  en el teléfono. Igual que la clave, quedan excluidos de la copia de seguridad
+  y del traspaso a otro dispositivo.
+</p>
+
+<h2>Lo que la aplicación NO hace</h2>
+<ul>
+  <li>No envía ningún dato al desarrollador.</li>
+  <li>No incluye publicidad, analítica, seguimiento ni identificadores
+      publicitarios.</li>
+  <li>No crea cuentas ni pide registro.</li>
+  <li>No graba audio ni lo guarda en el dispositivo.</li>
+  <li>No guarda el historial de conversaciones más allá de la sesión abierta.</li>
+  <li>No vende ni comparte datos personales con terceros.</li>
+</ul>
+
+<h2>Menores</h2>
+<p>
+  La aplicación no está dirigida a menores de 13 años y no recoge datos de
+  forma consciente de ellos.
+</p>
+
+<h2>Cambios en esta política</h2>
+<p>
+  Si alguna versión futura cambia lo que la aplicación hace con los datos, esta
+  página se actualizará y cambiará la fecha del encabezado.
+</p>
+
+<h2>Denunciar una respuesta</h2>
+<p>
+  Si alguna respuesta del asistente resulta ofensiva o inapropiada, la pantalla
+  de configuración tiene un botón que abre tu aplicación de correo con esa
+  pregunta y esa respuesta ya escritas, para poder avisar. El mensaje lo envías
+  tú: la aplicación no manda nada sin que lo veas.
+</p>
+
+<h2>Contacto</h2>
+<p>
+  Para cualquier duda sobre privacidad:
+  <strong>cahijado.dev@gmail.com</strong>.
+</p>
+
+</body>
+</html>

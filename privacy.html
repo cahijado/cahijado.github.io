@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · 80s Retro Car Launcher</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.25rem; }
+  .date { opacity: .7; font-size: .9rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .4rem 0; }
+  .note { border-left: 3px solid currentColor; padding-left: 1rem; opacity: .85; }
+</style>
+</head>
+<body>
+
+<h1>80s Retro Car Launcher Privacy Policy</h1>
+<p class="date">Last updated: 31 August 2026</p>
+
+<p>
+  80s Retro Car Launcher is an Android home screen. It has no servers of its own, no user
+  accounts, no advertising and no analytics, and <strong>the developer receives
+  no data whatsoever from people who use it</strong>.
+</p>
+
+<p>
+  Everything the app stores stays in the app's private storage on the phone.
+  The only thing that leaves the device is described under "Voice
+  conversation", and it goes to Google, not to us.
+</p>
+
+<h2>What the app uses, and what for</h2>
+
+<h3>Location</h3>
+<p>
+  The dashboard speedometer needs precise location to compute speed. The
+  position is used in memory while the screen is open: <strong>it is not
+  stored, not logged and not sent anywhere</strong>. If the permission is
+  denied, the app works the same and the speedometer reads zero.
+</p>
+
+<h3>Microphone and voice conversation</h3>
+<p>
+  The microphone is opened <strong>only</strong> for the duration of a
+  conversation, after the microphone button is pressed. There is no background
+  listening and no wake word.
+</p>
+<ul>
+  <li>
+    Audio is transcribed by <strong>Android's own speech recognizer</strong>.
+    Depending on the phone and the installed language pack, that transcription
+    happens on the device or on Google's servers, under the operating system's
+    own terms. The app neither records nor stores the audio.
+  </li>
+  <li>
+    The <strong>text</strong> of the transcribed question, the last few
+    conversation turns (kept in memory only, lost when the app closes) and the
+    configured <strong>driver name</strong> are sent to the <strong>Google
+    Gemini API</strong> to produce the answer.
+  </li>
+  <li>
+    That request is made with the <strong>API key each user creates and
+    configures</strong> inside the app. The relationship is between the user
+    and Google: Google's
+    <a href="https://policies.google.com/privacy">privacy policy</a> and the
+    Gemini API terms apply. The developer of the app is not involved,
+    cannot see those conversations and receives no copy of anything.
+  </li>
+  <li>
+    The answer is spoken through the system's text-to-speech engine and is not
+    stored.
+  </li>
+</ul>
+<p class="note">
+  With no Gemini key configured, the conversation feature is disabled: the
+  microphone button shows as locked and the microphone is never opened.
+</p>
+
+<h3>Gemini API key</h3>
+<p>
+  The key is stored in the app's private storage on the phone. It is
+  <strong>excluded from cloud backup and from device-to-device transfer</strong>,
+  so it never leaves the phone it was typed into. It is sent only to Google,
+  with each request, as the API's own credential. It can be removed at any time
+  by clearing the field on the settings screen.
+</p>
+
+<h3>Notification access</h3>
+<p>
+  Notification access is optional and granted by hand in Android's settings.
+  The app uses it for two things, both <strong>on the device</strong>:
+</p>
+<ul>
+  <li>controlling music playback (knowing what is playing, pausing, skipping),
+      which is the only route Android gives a normal app for this;</li>
+  <li>showing the turn-by-turn instruction from whichever navigation app is
+      currently guiding.</li>
+</ul>
+<p>
+  Notification content is not stored, not written to any file and not sent to
+  any server. Without this permission the app works the same, with those two
+  panels empty.
+</p>
+
+<h3>List of installed apps</h3>
+<p>
+  Like any home screen, the app queries which apps have a launcher icon so it
+  can show and open them. That query is answered on the device and is not
+  transmitted.
+</p>
+
+<h3>Settings</h3>
+<p>
+  The driver name, the pursuit mode setting and the chosen indicators are
+  stored on the phone. Like the key, they are excluded from backup and from
+  transfer to another device.
+</p>
+
+<h2>What the app does NOT do</h2>
+<ul>
+  <li>It sends no data to the developer.</li>
+  <li>It contains no advertising, analytics, tracking or advertising IDs.</li>
+  <li>It creates no accounts and asks for no sign-up.</li>
+  <li>It does not record audio or store it on the device.</li>
+  <li>It keeps no conversation history beyond the open session.</li>
+  <li>It does not sell or share personal data with third parties.</li>
+</ul>
+
+<h2>Children</h2>
+<p>
+  The app is not directed at children under 13 and does not knowingly collect
+  data from them.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+  If a future version changes what the app does with data, this page will be
+  updated and the date in the header will change.
+</p>
+
+<h2>Reporting an answer</h2>
+<p>
+  If an answer from the assistant is offensive or inappropriate, the settings
+  screen has a button that opens your mail app with that question and answer
+  already written, so you can report it. You send the message yourself: the app
+  never sends anything without you seeing it.
+</p>
+
+<h2>Contact</h2>
+<p>
+  For any privacy question: <strong>cahijado.dev@gmail.com</strong>.
+</p>
+
+</body>
+</html>
